@@ -117,19 +117,29 @@ header {
   font-weight: 500;
 }
 
+/* transition 효과는 display와 height와 영향을 받지 않으므로 삭제한다. */
+
 .gnb ul.inner {
-  display: none;
+  position: absolute;
+  top: 80px;
   width: 160px;
   background: #ffffff;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-  padding: 10px 25px;
+  padding: 0;
   box-sizing: border-box;
-  line-height: 50px;
-  opacity: 1;
+  line-height: 0;
+  opacity: 0;
+  /* all 적용시 padding에도 transition이 적용된다. */
+  /* transition: all 0.5s;  */
+  transition: opacity 0.5s, top 0.5s;
+  overflow: hidden;
 }
 
 .gnb ul.inner.on {
-  display: block;
+  top: 90px;
+  padding: 10px 25px; 
+  line-height: 50px;
+  opacity: 1;
 }
 
 .gnb ul.inner a {
