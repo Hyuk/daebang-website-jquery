@@ -89,3 +89,48 @@ header {
 .innerHeader .logo a img:nth-child(2) {
   opacity: 0;
 }
+
+/* GNB */
+.gnb {
+  position: absolute;
+  left: 50%;
+  width: 800px;
+  transform: translateX(-50%)
+}
+
+.gnb > li {
+  float: left;
+  width: 20%;
+  height: 90px;
+  line-height: 90px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.gnb > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.gnb ul.inner {
+  display: none;
+  width: 160px;
+  background: #ffffff;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  padding: 10px 25px;
+  box-sizing: border-box;
+  line-height: 50px;
+  opacity: 1;
+}
+
+.gnb ul.inner a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 17px;
+}
