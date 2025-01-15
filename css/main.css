@@ -117,11 +117,31 @@ header {
   font-weight: 500;
 }
 
+.gnb > li > a:before {
+  position: absolute;
+  content: '';
+  background: #f8b922;
+  width: 75%;
+  height: 100%;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -90px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.gnb li:hover > a:before {
+  top: 0;
+  opacity: 1;
+}
+
 /* transition 효과는 display와 height와 영향을 받지 않으므로 삭제한다. */
 
 .gnb ul.inner {
   position: absolute;
   top: 80px;
+  left: 12%;
   width: 160px;
   background: #ffffff;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
