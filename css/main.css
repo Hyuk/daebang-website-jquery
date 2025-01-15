@@ -128,6 +128,10 @@ header {
   opacity: 1;
 }
 
+.gnb ul.inner.on {
+  display: block;
+}
+
 .gnb ul.inner a {
   display: block;
   width: 100%;
