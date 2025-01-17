@@ -303,3 +303,75 @@ header.on .gnb ul.inner.on {
 .visual .slide li .mask.d {
   left: 75%;
 }
+
+/* 상단 이미지 배너의 화살표 스타일 */
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  background: none;
+  width: 110px;
+  height: 52px;
+  border: none;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.slick-next {
+  right: 0;
+  text-align: left;
+}
+
+.slick-arrow:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 55%;
+  height: 2px;
+  background: #fff;
+}
+
+.slick-next:after {
+  left: 45%;
+}
+
+.slick-arrow:before {
+  content: '';
+  width: 0%;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  transition: all 0.4s;
+  z-index: -1;
+}
+
+.slick-prev:before {
+  left: 0;
+}
+
+.slick-next:before {
+  right: 0;
+}
+
+/* 화살표 마우스 오버 효과 */
+.slick-arrow:hover {
+  color: #000;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.slick-arrow:hover:after {
+  background: #f8b922;
+}
+
+.slick-arrow:hover:before {
+  width: 112%;
+}
