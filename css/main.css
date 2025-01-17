@@ -8,6 +8,7 @@
   padding: 0;
 }
 
+/* prettier-ignore */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td {
   margin: 0; 
   padding: 0;
@@ -20,17 +21,19 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: inherit
+  color: inherit;
 }
 
 li {
-  list-style: none
+  list-style: none;
 }
 
+/* prettier-ignore */
 address, em, i {
   font-style: none;
 }
 
+/* prettier-ignore */
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
 }
@@ -54,7 +57,7 @@ header {
   width: 100%;
   position: fixed;
   z-index: 100;
-  background: #000;
+  background: #191a1a;
 }
 
 .innerHeader {
@@ -94,7 +97,7 @@ header {
   position: absolute;
   left: 50%;
   width: 800px;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
 
 .gnb > li {
@@ -132,7 +135,8 @@ header {
 
 /* hover를 사용할때는 웹 접근성을위해 focus도 지정해준다. */
 
-.gnb li:hover > a:before, .gnb li > a:focus:before {
+.gnb li:hover > a:before,
+.gnb li > a:focus:before {
   top: 0;
   opacity: 1;
 }
@@ -145,7 +149,7 @@ header {
   left: 12%;
   width: 160px;
   background: #ffffff;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   padding: 0;
   box-sizing: border-box;
   line-height: 0;
@@ -158,7 +162,7 @@ header {
 
 .gnb ul.inner.on {
   top: 90px;
-  padding: 10px 25px; 
+  padding: 10px 25px;
   line-height: 50px;
   opacity: 1;
 }
@@ -170,9 +174,9 @@ header {
   font-size: 17px;
 }
 
-.gnb ul.inner a span { 
+.gnb ul.inner a span {
   display: inline-block;
-  position: relative; 
+  position: relative;
 }
 
 .gnb ul.inner a span:after {
@@ -186,8 +190,38 @@ header {
   transition: all 0.3s;
 }
 
-.gnb ul.inner a:hover span:after, 
+.gnb ul.inner a:hover span:after,
 .gnb ul.inner a:focus span:after {
   width: 100%;
   padding-right: 10px;
+}
+
+/* 스크롤시 헤더 세로값 축소 */
+header.on .innerHeader {
+  height: 60px;
+  transition: all 0.4s;
+}
+
+header.on .innerHeader .logo {
+  margin-top: 13px;
+  transition: all 0.4s;
+}
+
+/* 스크롤시 로고 변경 */
+header.on .innerHeader .logo a img:nth-child(1) {
+  opacity: 0;
+}
+
+header.on .innerHeader .logo a img:nth-child(2) {
+  opacity: 1;
+}
+
+header.on .innerHeader .gnb > li {
+  height: 60px;
+  line-height: 60px;
+  transition: all 0.4s;
+}
+
+header.on .gnb ul.inner.on {
+  top: 60px;
 }
