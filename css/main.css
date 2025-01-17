@@ -229,3 +229,49 @@ header.on .innerHeader .gnb > li {
 header.on .gnb ul.inner.on {
   top: 60px;
 }
+
+/* 상단 이미지 배너 */
+.visual .slide li {
+  position: relative;
+  width: 100%;
+  height: 870px;
+  text-align: center;
+  color: #fff;
+}
+
+.visual .slide li .txt {
+  position: absolute;
+  width: 100%;
+  top: 34%;
+  font-size: 135px;
+  line-height: 1;
+  letter-spacing: 12px;
+}
+
+.visual .slide li a {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 27%;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.visual .slide li a:after {
+  content: '';
+  width: 65%;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -6px;
+  background: #f8b922;
+  transition: all 0.3s;
+}
+
+.visual .slide li a:hover:after,
+.visual .slide li a:focus:after {
+  width: 100%;
+  transition: all 0.3s;
+}
