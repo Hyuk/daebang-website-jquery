@@ -50,6 +50,10 @@ body {
   width: 100%;
   overflow: hidden;
 }
+
+.en {
+  font-family: 'Bebas Neue', cursive;
+}
 /* Layout End */
 
 /* Header Start */
