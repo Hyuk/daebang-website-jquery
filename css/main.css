@@ -239,6 +239,11 @@ header.on .gnb ul.inner.on {
   color: #fff;
 }
 
+.visual .slide li img {
+  height: 100%;
+  width: auto;
+}
+
 .visual .slide li .txt {
   position: absolute;
   width: 100%;
@@ -274,4 +279,27 @@ header.on .gnb ul.inner.on {
 .visual .slide li a:focus:after {
   width: 100%;
   transition: all 0.3s;
+}
+
+/* 마스크 */
+.visual .slide li .mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.visual .slide li .mask.a {
+  left: 0%;
+}
+.visual .slide li .mask.b {
+  left: 25%;
+}
+.visual .slide li .mask.c {
+  left: 50%;
+}
+.visual .slide li .mask.d {
+  left: 75%;
 }
