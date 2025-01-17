@@ -29,4 +29,7 @@ function fixHeader() {
   }
 }
 
-
+// 글자 애니메이션을 위한 Splitting 라이브러리 연결
+$(function () {
+  Splitting();
+});
