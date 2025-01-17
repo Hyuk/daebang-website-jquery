@@ -433,3 +433,35 @@ header.on .gnb ul.inner.on {
     width: 100%;
   }
 }
+
+/* 이미지 슬라이드 배너의 마스크 애니메이션 */
+@keyframes mask {
+  0% {
+    width: 25%;
+    background: #000;
+  }
+  50% {
+    width: 25%;
+    background: #000;
+  }
+  99% {
+    background: #000;
+  }
+}
+
+.visual .slick-active .mask.a {
+  animation-name: mask;
+  animation-duration: 0.4s;
+}
+.visual .slick-active .mask.b {
+  animation-name: mask;
+  animation-duration: 0.6s;
+}
+.visual .slick-active .mask.c {
+  animation-name: mask;
+  animation-duration: 0.8;
+}
+.visual .slick-active .mask.d {
+  animation-name: mask;
+  animation-duration: 1s;
+}
