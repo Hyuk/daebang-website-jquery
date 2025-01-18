@@ -239,6 +239,18 @@ header.on .gnb ul.inner.on {
   color: #fff;
 }
 
+.visual .slide li:before {
+  content: '';
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 22%;
+  background: url(../img/symbol.png) no-repeat center/cover;
+  z-index: 1;
+}
+
 .visual .slide li img {
   height: 100%;
   width: auto;
@@ -394,6 +406,10 @@ header.on .gnb ul.inner.on {
   height: 20px;
   float: left;
   margin: 0 10px;
+}
+
+.visual .slide .slick-dots li:before {
+  display: none;
 }
 
 .visual .slide .slick-dots li button {
