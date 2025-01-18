@@ -532,7 +532,7 @@ header.on .gnb ul.inner.on {
   }
 }
 
-/* contents */
+/* information */
 .contents {
   position: relative;
   background: #fff;
@@ -554,3 +554,48 @@ header.on .gnb ul.inner.on {
 .contents .line.b {left: 50%;}
 /* prettier-ignore */
 .contents .line.c {left: 75%;}
+
+.contents .information .scrollBox {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.contents .information .scrollBox .scroll {
+  display: block;
+  width: 350px;
+  height: 60px;
+  background: #f8b922;
+  padding-left: 25px;
+  box-sizing: border-box;
+  font-size: 20px;
+  letter-spacing: 2px;
+  position: relative;
+  line-height: 60px;
+}
+
+.contents .information .scrollBox .scroll span {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  animation: scroll linear 0.8s 0s infinite;
+}
+
+.contents .information .scrollBox .scroll span img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 7px;
+  }
+  100% {
+    top: 0;
+  }
+}
