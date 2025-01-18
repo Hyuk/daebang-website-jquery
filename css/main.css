@@ -599,3 +599,20 @@ header.on .gnb ul.inner.on {
     top: 0;
   }
 }
+
+.contents .inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.contents .inner:after {
+  content: '';
+  width: 3px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: -60px;
+  transform: translateX(-50%);
+  background: #f8b922;
+}
