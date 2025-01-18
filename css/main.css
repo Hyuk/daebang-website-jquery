@@ -242,6 +242,10 @@ header.on .gnb ul.inner.on {
 .visual .slide li img {
   height: 100%;
   width: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  top: 0;
 }
 
 .visual .slide li .txt {
@@ -498,5 +502,16 @@ header.on .gnb ul.inner.on {
   60% {
     bottom: 20%;
     opacity: 0;
+  }
+}
+
+.visual .slick-active img {
+  animation-name: img;
+  animation-duration: 7s;
+}
+
+@keyframes img {
+  0% {
+    transform: scale(1.2) translateX(-50%);
   }
 }
