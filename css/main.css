@@ -483,3 +483,20 @@ header.on .gnb ul.inner.on {
     opacity: 0;
   }
 }
+
+/* CTA 버튼 애니메이션 */
+.visual .slick-active a {
+  animation-name: slide-up2;
+  animation-duration: 1s;
+}
+
+@keyframes slide-up2 {
+  0% {
+    bottom: 20%;
+    opacity: 0%;
+  }
+  60% {
+    bottom: 20%;
+    opacity: 0;
+  }
+}
