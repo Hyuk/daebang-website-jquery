@@ -531,3 +531,26 @@ header.on .gnb ul.inner.on {
     transform: scale(1.2) translateX(-50%);
   }
 }
+
+/* contents */
+.contents {
+  position: relative;
+  background: #fff;
+  height: 500px;
+}
+
+.contents .line {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #eeeeee;
+}
+
+/* prettier-ignore */
+.contents .line.a {left: 25%;}
+/* prettier-ignore */
+.contents .line.b {left: 50%;}
+/* prettier-ignore */
+.contents .line.c {left: 75%;}
