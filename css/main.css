@@ -819,3 +819,28 @@ header.on .gnb ul.inner.on {
 .contents .slideBox .slide2 .slick-dots button:hover {
   cursor: pointer;
 }
+
+/* 슬라이드 현재 페이지 표시 밑줄 애니메이션 */
+.contents .slideBox .slide2 .slick-dots .slick-active {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.contents .slideBox .slide2 .slick-dots .slick-active:after {
+  content: '';
+  width: 400px;
+  height: 4px;
+  background: #f8b922;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  animation: line;
+  animation-duration: 0.3s;
+}
+
+@keyframes line {
+  0% {
+    left: -500px;
+    opacity: 0;
+  }
+}
