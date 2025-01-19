@@ -46,4 +46,17 @@ $(function () {
     pauseOnFocus: false, // 포커스시 멈추는 것을 해제
   });
   $('.slick-prev').text('prev');
+
+  // Information 섹션 이미지 슬라이드
+  $('.slide2').slick({
+    arrow: false, // 화살표
+    dots: true, // 인디케이터
+    autoplay: true, // 자동재생
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplaySpeed: 6000, // 재생시간
+    pauseOnHover: true, // 마우스오버시 멈추도록 설정
+    pauseOnFocus: true, // 포커스시 멈추는 것을 해제
+  });
 });

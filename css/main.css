@@ -536,7 +536,7 @@ header.on .gnb ul.inner.on {
 .contents {
   position: relative;
   background: #fff;
-  height: 500px;
+  height: 5000px;
 }
 
 .contents .line {
@@ -632,4 +632,42 @@ header.on .gnb ul.inner.on {
 .contents .title p {
   font-size: 24px;
   margin-top: 15px;
+}
+
+/* Information Slide */
+.contents .slideBox {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.contents .slideBox .slide2 {
+  width: 1500px;
+  position: absolute;
+  right: -50%;
+}
+
+.contents .slideBox .slide2 li {
+  margin-right: 50px;
+}
+
+.contents .slideBox .slide2 li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.contents .slideBox .slide2 li a p.img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.contents .slideBox .slide2 li a p.img img {
+  width: 100%;
+  transition: all 2s;
 }
