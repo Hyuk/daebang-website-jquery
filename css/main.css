@@ -734,3 +734,44 @@ header.on .gnb ul.inner.on {
   opacity: 1;
   height: 100%;
 }
+
+/* 이미지 검정 BG, 아이콘 효과 */
+.contents .slideBox .slide2 li a:hover img {
+  transform: scale(1.1);
+}
+
+.contents .slideBox .slide2 li a .img span:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(3, 3, 3, 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3;
+  z-index: 1;
+}
+
+.contents .slideBox .slide2 li a .img span:hover:before {
+  opacity: 1;
+}
+
+.contents .slideBox .slide2 li a .img span:after {
+  content: '';
+  width: 45px;
+  height: 45px;
+  background: url(../img/more.png) no-repeat center;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.4s;
+  transition-delay: 0.15s;
+  z-index: 2;
+}
+
+.contents .slideBox .slide2 li a .img span:hover:after {
+  transform: translate(-50%, -50%) scale(1);
+}
