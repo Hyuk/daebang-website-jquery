@@ -59,4 +59,10 @@ $(function () {
     pauseOnHover: true, // 마우스오버시 멈추도록 설정
     pauseOnFocus: true, // 포커스시 멈추는 것을 해제
   });
+
+  // Information 섹션 인디케이터 Slick dots
+  $('.slide2 #slick-slide-control10').text('서울 마곡지구 업무용지');
+  $('.slide2 #slick-slide-control11').text('서울 마곡지구 대방디엠시티2차');
+  $('.slide2 #slick-slide-control12').text('화성동탄1차 대방디엠시티 더 센텀');
+  $('.slide2 #slick-slide-control13').text('광주 수완 대방노블랜드6차');
 });

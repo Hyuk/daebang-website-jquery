@@ -775,3 +775,47 @@ header.on .gnb ul.inner.on {
 .contents .slideBox .slide2 li a .img span:hover:after {
   transform: translate(-50%, -50%) scale(1);
 }
+
+/* information section slick dots */
+.contents .slideBox .slide2 .slick-dots {
+  position: absolute;
+  left: -300px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contents .slideBox .slide2 .slick-dots button {
+  height: 35px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 50px;
+  text-align: left;
+  letter-spacing: -1px;
+}
+
+.contents .slideBox .slide2 .slick-dots button:before {
+  content: '01';
+  font-weight: bold;
+  color: #666;
+  font-size: 30px;
+  font-family: 'Bebas Neue', cursive;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contents .slideBox .slide2 .slick-dots li:nth-child(2) button:before {
+  content: '02';
+}
+.contents .slideBox .slide2 .slick-dots li:nth-child(3) button:before {
+  content: '03';
+}
+.contents .slideBox .slide2 .slick-dots li:nth-child(4) button:before {
+  content: '04';
+}
+.contents .slideBox .slide2 .slick-dots button:hover {
+  cursor: pointer;
+}
