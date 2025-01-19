@@ -671,3 +671,66 @@ header.on .gnb ul.inner.on {
   width: 100%;
   transition: all 2s;
 }
+
+/* 테두리 마우스오버 효과 */
+.contents .slideBox .slide2 li a:before {
+  content: '';
+  width: 0%;
+  height: 6px;
+  background: #f8b922;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.3s;
+}
+.contents .slideBox .slide2 li a:after {
+  content: '';
+  width: 0%;
+  height: 6px;
+  background: #f8b922;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.3s;
+}
+
+.contents .slideBox .slide2 li a .img:before {
+  content: '';
+  width: 6px;
+  height: 0%;
+  background: #f8b922;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.3s;
+}
+.contents .slideBox .slide2 li a .img:after {
+  content: '';
+  width: 6px;
+  height: 0%;
+  background: #f8b922;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.3s;
+}
+
+.contents .slideBox .slide2 li a:hover:before,
+.contents .slideBox .slide2 li a:hover:after {
+  opacity: 1;
+  width: 100%;
+}
+
+.contents .slideBox .slide2 li a .img:hover:before,
+.contents .slideBox .slide2 li a .img:hover:after {
+  opacity: 1;
+  height: 100%;
+}
