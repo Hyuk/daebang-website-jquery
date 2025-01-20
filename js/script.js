@@ -75,3 +75,11 @@ $(function () {
     once: false, // 스크롤 딱 한번만 하고 싶을 때는 true
   });
 });
+
+// 스크롤 다운 버튼 클릭 애니메이션
+$(function () {
+  $('.scroll').on('click', function () {
+    var scrollBtn = $('#scroll').offset().top; // #scroll의 끝나는 지점으로 스크롤바 이동
+    $('html, body').animate({ scrollTop: scrollBtn }, 400); // 그 위치로 부드럽게 스크롤
+  });
+});
