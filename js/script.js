@@ -66,3 +66,12 @@ $(function () {
   $('.slide2 #slick-slide-control12').text('화성동탄1차 대방디엠시티 더 센텀');
   $('.slide2 #slick-slide-control13').text('광주 수완 대방노블랜드6차');
 });
+
+// 스크롤 애니메이션 (scrolla.js)
+
+$(function () {
+  $('.animate').scrolla({
+    mobile: true, // 모바일버전시 활성화
+    once: false, // 스크롤 딱 한번만 하고 싶을 때는 true
+  });
+});
