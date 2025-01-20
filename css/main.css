@@ -634,6 +634,32 @@ header.on .gnb ul.inner.on {
   margin-top: 15px;
 }
 
+/* 공통된 버튼(더보기버튼) */
+.contents .more {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 22px;
+  padding-bottom: 8px;
+  color: #666;
+}
+
+.contents .more:after {
+  content: '';
+  width: 70%;
+  height: 4px;
+  background: #f8b922;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.contents .more:hover:after {
+  width: 100%;
+}
+
 /* Information Slide */
 .contents .slideBox {
   width: 1200px;
