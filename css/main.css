@@ -870,3 +870,21 @@ header.on .gnb ul.inner.on {
     opacity: 0;
   }
 }
+
+/* 타이틀 영어 애니메이션 */
+.motion .char {
+  display: inline-block;
+  animation: slide-up2 1s cubic-bezier(0.5, 0, 0.5, 1) both;
+  animation-delay: calc(60ms * var(--char-index));
+}
+
+@keyframes slide-up2 {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+}
