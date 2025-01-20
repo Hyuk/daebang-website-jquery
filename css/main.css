@@ -888,3 +888,9 @@ header.on .gnb ul.inner.on {
     opacity: 0;
   }
 }
+
+/* 타이틀 한글 애니메이션 */
+.motion .title p {
+  animation: slide-up2;
+  animation-duration: 1s;
+}
