@@ -478,7 +478,7 @@ header.on .gnb ul.inner.on {
 }
 .visual .slick-active .mask.c {
   animation-name: mask;
-  animation-duration: 0.8;
+  animation-duration: 0.8s;
 }
 .visual .slick-active .mask.d {
   animation-name: mask;
