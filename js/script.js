@@ -37,7 +37,7 @@ $(function () {
 // Slick 라이브러리를 이용한 이미지 슬라이드
 $(function () {
   $('.visual .slide').slick({
-    arrow: true, // 화살표
+    arrows: true, // 화살표
     dots: true, // 인디케이터
     autoplay: true, // 자동재생
     fade: true, // 페이드인 효과
@@ -49,7 +49,7 @@ $(function () {
 
   // Information 섹션 이미지 슬라이드
   $('.slide2').slick({
-    arrow: false, // 화살표
+    arrows: false, // 화살표
     dots: true, // 인디케이터
     autoplay: true, // 자동재생
     infinite: true,
