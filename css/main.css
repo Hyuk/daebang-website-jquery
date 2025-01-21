@@ -43,7 +43,6 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 14px;
-  background: #eeeeee;
 }
 
 .wrap {
@@ -536,7 +535,7 @@ header.on .gnb ul.inner.on {
 .contents {
   position: relative;
   background: #fff;
-  height: 5000px;
+  margin-bottom: 5000px;
 }
 
 .contents .line {
@@ -1037,4 +1036,200 @@ header.on .gnb ul.inner.on {
 .contents .video .inner .videoBox .mask span:hover:after {
   opacity: 1;
   height: 100%;
+}
+
+/* 비지니스 섹션 */
+.contents .business {
+  position: relative;
+}
+
+.contents .business .inner {
+  position: absolute;
+  width: 476px;
+  top: 0;
+  left: 25%;
+  padding: 150px 0 100px;
+}
+
+.contents .business .inner:after {
+  top: 0;
+  left: 0;
+}
+
+.contents .business .list {
+  width: 1520px;
+  height: 1250px;
+  margin: auto;
+  position: relative;
+}
+
+.contents .business .list li {
+  position: absolute;
+}
+
+.contents .business .list li:nth-child(1) {
+  left: -50px;
+  top: 500px;
+}
+
+.contents .business .list li:nth-child(2) {
+  right: 193px;
+  top: 150px;
+}
+
+.contents .business .list li:nth-child(3) {
+  right: -50px;
+  bottom: 0px;
+}
+
+.contents .business .list a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.contents .business .list li a .img {
+  overflow: hidden;
+}
+
+.contents .business .list li a .img img {
+  width: 100%;
+  vertical-align: bottom;
+  transition: all 1s;
+}
+
+.contents .business .list a .txt {
+  position: absolute;
+  background: #fff;
+  width: 300px;
+  height: 455px;
+  padding: 50px 0 0 40px;
+  box-sizing: border-box;
+  border: 1px solid #f8b922;
+  line-height: 1.2;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+/* 크기, 위치 다르게 변경 */
+.contents .business .list li:nth-child(1) a .txt {
+  width: 455px;
+  height: 330px;
+  right: -200px;
+  top: 50px;
+}
+
+.contents .business .list li:nth-child(2) a .txt {
+  left: -100px;
+  top: 40px;
+}
+
+.contents .business .list li:nth-child(3) a .txt {
+  left: -100px;
+  top: -40px;
+}
+
+.contents .business .list li a .txt h3 {
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.contents .business .list li a .txt h3 span {
+  color: #f8b922;
+}
+
+.contents .business .list li a .txt p {
+  font-size: 16px;
+  color: #666;
+}
+
+.contents .business .list li a .icon {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #f8b922;
+  bottom: 40px;
+  left: 40px;
+  transition: all 0.3s;
+}
+
+.contents .business .list li a .icon:after {
+  content: '';
+  width: 2px;
+  height: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #f8b922;
+}
+
+.contents .business .list li a .icon:before {
+  content: '';
+  width: 15px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #f8b922;
+}
+
+/* 비지니스 섹션 호버 효과 */
+.contents .business .list li a:hover .img img {
+  transform: scale(1.1);
+}
+
+.contents .business .list li a:hover .txt {
+  background: #f8b922;
+}
+
+.contents .business .list a:hover h3,
+.contents .business .list li a:hover h3 span,
+.contents .business .list li a:hover p {
+  color: #fff;
+}
+
+.contents .business .list a:hover .icon {
+  border-color: #fff;
+}
+
+.contents .business .list li a:hover .icon:after,
+.contents .business .list li a:hover .icon:before {
+  background: #fff;
+}
+
+/* 비지니스 섹션 스크롤 모션 애니메이션 - 이미지가 좌우에서 나오도록 애니메이션 */
+.contents .business .list li.motion a .img img {
+  animation: list;
+  animation-duration: 1s;
+}
+
+@keyframes list {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.contents .business .list li.motion:nth-child(2) a .img img {
+  animation: list2;
+  animation-duration: 1s;
+}
+
+@keyframes list2 {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
 }
