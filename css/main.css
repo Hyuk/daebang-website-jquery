@@ -1433,3 +1433,105 @@ header.on .gnb ul.inner.on {
   background: url(../img/career.jpg) no-repeat right 0% center/50%;
   transition: all 0.6s;
 }
+
+/* 고객 섹션 */
+.contents .customers {
+  margin: 180px 0 0;
+  background: url(../img/customer.jpg) no-repeat center/cover;
+  position: relative;
+  padding: 100px 0;
+  transition: all 1s;
+}
+
+.contents .customers .inner {
+  overflow: hidden;
+}
+
+.contents .customers .inner .en,
+.contents .customers .inner p {
+  color: #fff;
+}
+
+.contents .customers .inner .left {
+  float: left;
+  padding-bottom: 80px;
+}
+
+.contents .customers .inner .right {
+  float: right;
+  margin-top: 80px;
+}
+
+.contents .customers .inner .right li {
+  float: left;
+  margin-left: 25px;
+}
+
+.contents .customers .inner .right li a {
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.contents .customers .inner li a:after {
+  content: 'FAQ';
+  position: absolute;
+  left: 0;
+  bottom: 17%;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+.contents .customers .inner .right li:nth-child(1) a:after {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 23px;
+  letter-spacing: 1px;
+}
+
+.contents .customers .inner .right li:nth-child(2) a:after {
+  content: '마감재';
+}
+.contents .customers .inner .right li:nth-child(3) a:after {
+  content: '관심단지등록';
+}
+.contents .customers .inner .right li:nth-child(4) a:after {
+  content: '1:1문의';
+}
+.contents .customers .inner .right li a:hover {
+  border-color: #f8b922;
+  background: #f8b922;
+}
+
+/* 고객 섹션 스크롤 모션 */
+.contents .customers.motion .inner .right li {
+  animation-name: customers;
+  animation-duration: 0.7s;
+}
+
+.contents .customers.motion .inner .right li:nth-child(3) {
+  animation-duration: 0.9s;
+}
+
+.contents .customers.motion .inner .right li:nth-child(2) {
+  animation-duration: 1.1s;
+}
+
+.contents .customers.motion .inner .right li:nth-child(4) {
+  animation-duration: 1.3s;
+}
+
+@keyframes customers {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+}
