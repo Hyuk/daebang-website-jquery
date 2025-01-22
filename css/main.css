@@ -535,7 +535,6 @@ header.on .gnb ul.inner.on {
 .contents {
   position: relative;
   background: #fff;
-  margin-bottom: 5000px;
 }
 
 .contents .line {
@@ -657,6 +656,19 @@ header.on .gnb ul.inner.on {
 
 .contents .more:hover:after {
   width: 100%;
+}
+
+/* inner:after 애니메이션 */
+.motion:after {
+  animation-name: slide-down;
+  animation-duration: 0.5s;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
 }
 
 /* Information Slide */
