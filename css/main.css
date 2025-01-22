@@ -1399,8 +1399,37 @@ header.on .gnb ul.inner.on {
   height: 100%;
 }
 
-/* 스크롤 모션 */
+/* 뉴스섹션 심볼 스크롤 모션 */
 .contents .news .symbol.motion {
   animation-name: slide-up2;
   animation-duration: 1s;
+}
+
+/* 채용 섹션 */
+.contents .career {
+  position: relative;
+  background: url(../img/career.jpg) no-repeat right -100% center/50%;
+  height: 445px;
+}
+
+.contents .career .inner {
+  padding: 80px 0;
+  margin: auto;
+}
+
+.contents .career .inner:after {
+  left: 125px;
+  top: -60px;
+}
+
+.contents .career .inner p {
+  color: #c7a77d;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* 채용 섹션 스크롤 모션 */
+.contents .career.motion {
+  background: url(../img/career.jpg) no-repeat right 0% center/50%;
+  transition: all 0.6s;
 }
