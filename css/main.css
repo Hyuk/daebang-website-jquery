@@ -1547,3 +1547,34 @@ header.on .gnb ul.inner.on {
     opacity: 0;
   }
 }
+
+/* Footer */
+footer {
+  background: #191a1a;
+  padding: 30px 60px;
+  color: #666;
+}
+
+footer ul {
+  clear: both;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+footer ul:first-child {
+  font-weight: bold;
+  color: #aaa;
+  font-size: 15px;
+}
+
+footer ul li {
+  float: left;
+  margin-right: 20px;
+}
+
+footer p {
+  clear: both;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
