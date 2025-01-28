@@ -246,7 +246,7 @@ header.on .gnb ul.inner.on {
   left: 50%;
   transform: translateX(-50%);
   top: 22%;
-  background: url(../img/symbol.png) no-repeat center/cover;
+  background: url(../img/symbol1.png) no-repeat center/cover;
   z-index: 1;
 }
 
